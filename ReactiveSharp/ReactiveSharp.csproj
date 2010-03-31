@@ -50,7 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="IReactiveEnumerable.cs" />
+    <Compile Include="IReactiveEnumerableAcceptor.cs" />
     <Compile Include="IReactiveValue.cs" />
+    <Compile Include="IReactiveValueAcceptor.cs" />
     <Compile Include="ReactiveEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Tuple.cs" />
