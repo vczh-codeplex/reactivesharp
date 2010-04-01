@@ -37,6 +37,20 @@ namespace ReactiveSharp
 
         #endregion
 
+        #region Value Operations
+
+        public static IReactiveValue<T> Listen<T>(this IReactiveValue<T> source, Action<T, T> handler)
+        {
+            return new ReactiveListen<T>(source, handler);
+        }
+
+        public static IReactiveValue<T> Listen<T>(this IReactiveValue<T> source, Action<T> handler)
+        {
+            return new ReactiveListen<T>(source, (a, b) => { handler(b); });
+        }
+
+        #endregion
+
         #region Extended Operations
 
         public static IReactiveValue<bool> All<T>(this IReactiveEnumerable<T> source, Func<T, bool> calculator)
