@@ -130,11 +130,11 @@ namespace DemoCalculator
                 switch (this.StateType)
                 {
                     case StateTypeEnum.Left:
+                    case StateTypeEnum.Enter:
                         return new State(this.StateType, -this.LeftOperand, this.RightOperand, this.Operator);
                     case StateTypeEnum.Right:
                         return new State(this.StateType, this.LeftOperand, -this.RightOperand, this.Operator);
                     case StateTypeEnum.Operator:
-                    case StateTypeEnum.Enter:
                     default:
                         return this;
                 }

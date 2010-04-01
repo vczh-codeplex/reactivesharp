@@ -15,7 +15,7 @@ namespace ReactiveSharp
         {
             public void EventReceiver(object sender, T e)
             {
-                AppendValue(new Tuple<object, T>(sender, e));
+                AppendValue(new Tuple<object, T>() { V1 = sender, V2 = e });
             }
         }
 
