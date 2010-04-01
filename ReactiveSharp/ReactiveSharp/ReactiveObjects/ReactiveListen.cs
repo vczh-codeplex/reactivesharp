@@ -18,6 +18,7 @@ namespace ReactiveSharp.ReactiveObjects
         private void value_ValueIncomed(object sender, ReactiveValueValueIncomedEventArgs<T> e)
         {
             handler(e.LastValue, e.CurrentValue);
+            ChangeValue(e.LastValue);
         }
     }
 }
