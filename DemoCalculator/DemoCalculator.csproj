@@ -82,6 +82,12 @@
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReactiveSharp\ReactiveSharp.csproj">
+      <Project>{4B52323A-F1D0-4BAC-9CDA-F3BF9527A50E}</Project>
+      <Name>ReactiveSharp</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -16,8 +16,7 @@ namespace DemoClickCounter
         {
             InitializeComponent();
             buttonClickMe.AttachEvent<EventArgs>("Click")
-                .Select(e => 1)
-                .Sum()
+                .Count()
                 .Listen(i =>
                 {
                     buttonClickMe.Text = "You have clicked " + i.ToString() + " times.";

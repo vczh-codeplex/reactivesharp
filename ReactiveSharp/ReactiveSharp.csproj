@@ -61,6 +61,7 @@
     <Compile Include="ReactiveObjects\ReactiveListen.cs" />
     <Compile Include="ReactiveObjects\ReactivePairWise.cs" />
     <Compile Include="ReactiveObjects\ReactiveSelect.cs" />
+    <Compile Include="ReactiveObjects\ReactiveTogetherWith.cs" />
     <Compile Include="ReactiveObjects\ReactiveValueBase.cs" />
     <Compile Include="ReactiveObjects\ReactiveWhere.cs" />
     <Compile Include="Tuple.cs" />
