@@ -40,6 +40,21 @@ namespace ReactiveSharp
             return new ReactiveTogetherWith<T>(sourceA, sourceB);
         }
 
+        public static IReactiveEnumerable<Tuple<int, T>> WithIndex<T>(this IReactiveEnumerable<T> source)
+        {
+            return new ReactiveWithIndex<T>(source);
+        }
+
+        public static IReactiveEnumerable<T> Branch<T>(this IReactiveEnumerable<T> source, Action<IReactiveEnumerable<T>, T> action)
+        {
+            return new ReactiveBranch<T>(source, action);
+        }
+
+        public static IReactiveEnumerable<T> Branch<T>(this IReactiveEnumerable<T> source, Action<T> action)
+        {
+            return new ReactiveBranch<T>(source, (s, e) => action(e));
+        }
+
         #endregion
 
         #region Value Operations

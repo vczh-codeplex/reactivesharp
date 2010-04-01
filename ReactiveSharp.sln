@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveSharp", "ReactiveSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoClickCounter", "DemoClickCounter\DemoClickCounter.csproj", "{3380A89D-8DCC-4887-9E3A-6A7F4F28CBA9}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoGetSum", "DemoGetSum\DemoGetSum.csproj", "{62796B90-DA81-4161-BCCB-7E29234D8359}"
+EndProject
 Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
-		SccNumberOfProjects = 4
+		SccNumberOfProjects = 5
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
 		SccTeamFoundationServer = https://tfs02.codeplex.com/
 		SccLocalPath0 = .
@@ -22,6 +24,9 @@ Global
 		SccProjectUniqueName3 = DemoClickCounter\\DemoClickCounter.csproj
 		SccProjectName3 = DemoClickCounter
 		SccLocalPath3 = DemoClickCounter
+		SccProjectUniqueName4 = DemoGetSum\\DemoGetSum.csproj
+		SccProjectName4 = DemoGetSum
+		SccLocalPath4 = DemoGetSum
 	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -40,6 +45,10 @@ Global
 		{3380A89D-8DCC-4887-9E3A-6A7F4F28CBA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3380A89D-8DCC-4887-9E3A-6A7F4F28CBA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3380A89D-8DCC-4887-9E3A-6A7F4F28CBA9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62796B90-DA81-4161-BCCB-7E29234D8359}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62796B90-DA81-4161-BCCB-7E29234D8359}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62796B90-DA81-4161-BCCB-7E29234D8359}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62796B90-DA81-4161-BCCB-7E29234D8359}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

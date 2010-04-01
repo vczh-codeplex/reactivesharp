@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{4B52323A-F1D0-4BAC-9CDA-F3BF9527A50E}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{62796B90-DA81-4161-BCCB-7E29234D8359}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ReactiveSharp</RootNamespace>
-    <AssemblyName>ReactiveSharp</AssemblyName>
+    <RootNamespace>DemoGetSum</RootNamespace>
+    <AssemblyName>DemoGetSum</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <SccProjectName>SAK</SccProjectName>
@@ -39,7 +39,6 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
-    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml.Linq">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
@@ -47,26 +46,48 @@
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ControlReactiveHelper.cs" />
-    <Compile Include="IReactiveEnumerable.cs" />
-    <Compile Include="IReactiveValue.cs" />
-    <Compile Include="ReactiveEvent.cs" />
+    <Compile Include="SumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SumForm.Designer.cs">
+      <DependentUpon>SumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ReactiveObjects\ReactiveAggregate.cs" />
-    <Compile Include="ReactiveObjects\ReactiveBranch.cs" />
-    <Compile Include="ReactiveObjects\ReactiveCount.cs" />
-    <Compile Include="ReactiveObjects\ReactiveEnumerableBase.cs" />
-    <Compile Include="ReactiveObjects\ReactiveListen.cs" />
-    <Compile Include="ReactiveObjects\ReactivePairWise.cs" />
-    <Compile Include="ReactiveObjects\ReactiveSelect.cs" />
-    <Compile Include="ReactiveObjects\ReactiveTogetherWith.cs" />
-    <Compile Include="ReactiveObjects\ReactiveValueBase.cs" />
-    <Compile Include="ReactiveObjects\ReactiveWhere.cs" />
-    <Compile Include="ReactiveObjects\ReactiveWithIndex.cs" />
-    <Compile Include="Tuple.cs" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SumForm.resx">
+      <DependentUpon>SumForm.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ReactiveSharp\ReactiveSharp.csproj">
+      <Project>{4B52323A-F1D0-4BAC-9CDA-F3BF9527A50E}</Project>
+      <Name>ReactiveSharp</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

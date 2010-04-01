@@ -19,7 +19,7 @@ namespace ReactiveSharp.ReactiveObjects
         {
             if (this.hasValue)
             {
-                AppendValue(new Tuple<T, T>(this.currentValue, e.LastValue));
+                AppendValue(new Tuple<T, T>() { V1 = this.currentValue, V2 = e.LastValue });
             }
             this.hasValue = true;
             this.currentValue = e.LastValue;
