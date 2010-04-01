@@ -35,6 +35,11 @@ namespace ReactiveSharp
             return new ReactivePairWise<T>(source);
         }
 
+        public static IReactiveEnumerable<T> TogetherWith<T>(this IReactiveEnumerable<T> sourceA, IReactiveEnumerable<T> sourceB)
+        {
+            return new ReactiveTogetherWith<T>(sourceA, sourceB);
+        }
+
         #endregion
 
         #region Value Operations
