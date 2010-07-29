@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCalculator", "DemoCalculator\DemoCalculator.csproj", "{5CFCA5AA-FA1C-468E-9D92-5E33D9F06787}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReactiveSharp", "ReactiveSharp\ReactiveSharp.csproj", "{4B52323A-F1D0-4BAC-9CDA-F3BF9527A50E}"
@@ -15,7 +15,7 @@ Global
 	GlobalSection(TeamFoundationVersionControl) = preSolution
 		SccNumberOfProjects = 6
 		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
-		SccTeamFoundationServer = https://tfs02.codeplex.com/
+		SccTeamFoundationServer = https://tfs.codeplex.com/tfs/tfs02
 		SccLocalPath0 = .
 		SccProjectUniqueName1 = DemoCalculator\\DemoCalculator.csproj
 		SccProjectName1 = DemoCalculator
